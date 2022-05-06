@@ -45,28 +45,39 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--very-dark-blue);
+  background-color: black;
 }
 
-.form {
+.form-card {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
   width: min(var(--mobile) - 60px, 70%);
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 30px;
   background: linear-gradient(to bottom, var(--dark-blue), var(--very-dark-blue));
 }
 
 button[type="button"] {
   background-color: var(--dark-blue);
   color: var(--medium-grey);
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   font-weight: bold;
   border: none;
   border-radius: 50%;
-  padding: 15px;
+  padding: 12px;
+}
+
+button[type="button"]:hover {
+  cursor: pointer;
+  background-color: var(--medium-grey);
+  color: var(--white);
+}
+
+button[type="button"]:focus {
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .rate {
@@ -88,7 +99,7 @@ button[type="button"] {
 .submit {
   background-color: var(--orange);
   color: var(--white);
-  padding: 10px;
+  padding: 12px;
   border-radius: 20px;
   width: 100%;
   text-transform: uppercase;
@@ -108,4 +119,38 @@ button[type="button"] {
   left: 50%;
   transform: translate(-50%, 0);
   width: 100%;
+}
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.rating-selected {
+  color: var(--orange);
+  padding: 6px 20px;
+  border-radius: 20px;
+  background-color: var(--dark-blue);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  margin: 20px auto;
+}
+
+.none {
+  display: none;
+}
+
+.thank-ilustration {
+  margin: 0 auto;
+}
+
+.thank-you-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.thank-you-paragraph {
+  text-align: center;
+  color: var(--light-grey);
 }
